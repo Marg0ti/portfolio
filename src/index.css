@@ -11,6 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
 }
 /*----- Componentes*/
 
@@ -245,7 +246,6 @@ h2 {
   width: 80%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 .proyecto-item  div  img {
   width: 100%;
@@ -292,6 +292,12 @@ h2 {
   filter: brightness(1.2);
 }
 
+.proyecto-detalles2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
 /*Sobre mi*/
 .sobre-mi-texto{
   width: 80%;
@@ -313,4 +319,48 @@ h2 {
   button {
     background-color: #f9f9f9;
   }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    font-size: 20px;
+  }
+  .proyecto-item {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: pink;
+  }
+
+  .proyecto-imagen {
+    width: 45%;
+    display: flex;
+  }
+  .proyecto-detalles {
+    width: 45%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 1rem;
+    
+  }
+  .proyecto-info {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  .proyecto-codigo {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .proyecto-tecnologias {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+@media (min-width:1440px){
+  :root{
+    font-size: 22px;
+  }
+  
 }
