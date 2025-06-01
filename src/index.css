@@ -538,9 +538,21 @@ footer {
     font-size: 22px;
   }
 
+  .timeline {
+    width: 65%;
+    margin: auto;
+  }
+
   .proyecto-item{
-  width: 70%;
+    width: 65%;
+   
+  }
+
+  .sobre-mi-container {
+    width: 65%;
+  }
   
-}
+
+
   
 }
