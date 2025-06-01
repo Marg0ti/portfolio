@@ -5,11 +5,12 @@ import { FaBars } from "react-icons/fa";
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
+  const buttonRef = useRef(null);
 
 
   useEffect(() => {
     function handleClickOutside(event) {
-        if (menuRef.current && !menuRef.current.contains(event.target)) {
+        if (menuRef.current && !menuRef.current.contains(event.target) && buttonRef.current && !buttonRef.current.contains(event.target)) {
             setIsOpen(false);
         }
     }
@@ -22,7 +23,7 @@ export default function NavBar() {
   return (
     <header className="navbar">
       <div className="navbar-container">
-        <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        <button ref={buttonRef} className="hamburger" onClick={() => setIsOpen(!isOpen)}>
           <FaBars size={24} />
         </button>
 
