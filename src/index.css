@@ -75,12 +75,13 @@
 }
 
 h2{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--color-h2);
 }
 h3 {
+  font-size: 1.3rem;
   color: var(--color-h3);
 }
 section {
@@ -183,11 +184,23 @@ h1{
 }
 
 #inicio span{
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   color: var(--color-h1);
   font-weight: bold;
   text-align: end;
 }
+
+.social-media-ul {
+  display: flex;
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: end;
+  scale: 0.9;
+}
+
+/*-----Experiencia */
 #experiencia  {
   font-family: Arial, sans-serif;
   margin: 2rem;
@@ -405,6 +418,11 @@ h2 {
     align-items: center;
     gap: 2rem;
   }
+
+  .social-media-ul {
+  gap: 1rem;
+  scale: 1;
+}
 
   /*----- Proyectos*/
 
