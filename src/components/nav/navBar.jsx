@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, use } from "react";
 import Links from "./Links";
 import { FaBars } from "react-icons/fa";
 
@@ -19,7 +19,21 @@ export default function NavBar() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
+
+    
   }, [isOpen]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setIsOpen(false);
+      };
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <header className="navbar">
       <div className="navbar-container">

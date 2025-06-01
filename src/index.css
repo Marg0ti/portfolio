@@ -342,6 +342,27 @@ h2 {
   :root {
     font-size: 20px;
   }
+  .hamburger {
+    display: none;
+  }
+  
+  .nav-links{
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 2rem;
+    transform: translateX(0);
+    height: 2rem;
+    width: 100%;
+  }
+  .navBar-ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
   .proyecto-item {
     flex-direction: row;
     justify-content: space-between;
