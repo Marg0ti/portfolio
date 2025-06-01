@@ -20,7 +20,7 @@ export default function SobreMi() {
                     </p>
                 </div>
                 <div className="sobre-mi-imagen">
-                    <img src="/src/media/pictures/margot2.jpeg" alt="Margot" />
+                    <img src="/pictures/about-me/margot2.jpeg" alt="Margot" />
                 </div>
             </div>
         </section>

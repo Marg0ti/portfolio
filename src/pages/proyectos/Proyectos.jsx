@@ -7,7 +7,7 @@ export default function Proyectos(){
             
             <article className="proyecto-item">
                 <div className="proyecto-imagen">
-                    <img src="/src/media/pictures/background1.jpg" alt="" />
+                    <video src="/pictures/proyect/mariposario.mp4" controls muted loop playsInline></video>
                 </div>
                 <div className="proyecto-detalles">
                     <div className="proyecto-detalles2">
@@ -32,7 +32,8 @@ export default function Proyectos(){
 
             <article className="proyecto-item">
                 <div className="proyecto-imagen">
-                    <img src="/src/media/pictures/background1.jpg" alt="" />
+                    <video src="/pictures/proyect/stripe.mp4" controls muted loop playsInline></video>
+                    
                 </div>
 
                 <div className="proyecto-detalles">
@@ -61,7 +62,7 @@ export default function Proyectos(){
 
            <article className="proyecto-item">
     <div className="proyecto-imagen">
-        <img src="/src/media/pictures/background1.jpg" alt="" />
+        <img src="/pictures/proyect/API.png" alt="" />
     </div>
     <div className="proyecto-detalles">
         <div className="proyecto-detalles2">
@@ -86,7 +87,7 @@ export default function Proyectos(){
 
 <article className="proyecto-item">
     <div className="proyecto-imagen">
-        <img src="/src/media/pictures/background1.jpg" alt="" />
+        <img src="/pictures/proyect/MVC.png" alt="" />
     </div>
     <div className="proyecto-detalles">
         <div className="proyecto-detalles2">
