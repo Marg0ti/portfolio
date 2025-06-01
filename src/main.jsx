@@ -7,7 +7,7 @@ import Inicio from './pages/inicio/Inicio'
 import Experiencia from './pages/experiencia/Experiencia'
 import Proyectos from './pages/proyectos/Proyectos'
 import SobreMi from './pages/sobreMi/SobreMi'
-import Footer from './components/footer/footer'
+import Footer from './components/footer/Footer'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
