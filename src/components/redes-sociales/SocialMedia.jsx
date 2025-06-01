@@ -9,7 +9,7 @@ export default function SocialMedia() {
                 <a href="https://github.com/Marg0ti/">G</a>
             </li>
             <li>
-                <a href="">CV</a>
+                <a href="/pictures/cv/Margot-HerGon-.pdf" target="_blank">CV</a>
             </li>
         </ul>
     )
