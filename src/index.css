@@ -6,7 +6,7 @@
   font-family: 'Didact Gothic', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  text-align: justify;
   
 
   font-synthesis: none;
@@ -256,7 +256,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem;
+  /* margin: 2rem; */
 }
 
 .proyecto-item{
@@ -317,18 +317,26 @@ h2 {
   gap: 1rem;
 }
 /*Sobre mi*/
-.sobre-mi-texto{
-  width: 80%;
+.sobre-mi-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
 }
+.sobre-mi-texto{
+  width: 80%;
+  margin-bottom: 2rem;
+}
 .sobre-mi-imagen {
-  width: 100%;
+  width: 80%;
   
 }
 .sobre-mi-imagen img {
   width: 100%;
   background-size: cover ;
   background-attachment: fixed;
+
 }
 
  video {
